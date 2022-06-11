@@ -18,58 +18,58 @@
     <div class="selecao">
             <div class="texto">Primeiro, seu prato</div>
         <div class="rolagem">
-            <div class="itens">
+            <div class="itens" onclick="selecionarcomida(this)">
                 <img src="Port of Miami.jpg" alt="">
-                <h2>Frango Yin Yang</h2>
-                <p>Um pouco de batata, um pouco de salada</p>
-                <h4>R$14,90</h4>
+                <h2>Port of Miami</h2>
+                <p>Burger, Catupiry, Bacon caramelizado</p>
+                <h4>R$27,90</h4>
             </div>
 
-            <div class="itens">
-                <img src="Port of Miami.jpg" alt="">
-                <h2>Frango Yin Yang</h2>
-                <p>Um pouco de batata, um pouco de salada</p>
-                <h4>R$14,90</h4>
+            <div class="itens" onclick="selecionarcomida(this)">
+                <img src="Port of Norway.jpg" alt="">
+                <h2>Port of Norway</h2>
+                <p>280g de Burger, Bacon, Salada, Cebola, Picles</p>
+                <h4>R$30,90</h4>
             </div>
 
-            <div class="itens">
-                <img src="Port of Miami.jpg" alt="">
-                <h2>Frango Yin Yang</h2>
-                <p>Um pouco de batata, um pouco de salada</p>
-                <h4>R$14,90</h4>
+            <div class="itens" onclick="selecionarcomida(this)">
+                <img src="Cheese Salada bacon.jpg" alt="">
+                <h2>Salada Bacon</h2>
+                <p>Burger, Queijo prato, Maionese, Alface, Tomate e Bacon</p>
+                <h4>R$23,90</h4>
             </div>
 
-            <div class="itens">
-                <div><img src="Port of Miami.jpg" alt=""></div>
-                <h2>Frango Yin Yang</h2>
-                <p>Um pouco de batata, um pouco de salada</p>
-                <h4>R$14,90</h4>
+            <div class="itens" onclick="selecionarcomida(this)">
+                <div><img src="Cheese Burger.jpg" alt=""></div>
+                <h2>Cheese Burger</h2>
+                <p>Burger, Queijo prato, Maionese</p>
+                <h4>R$19,90</h4>
             </div>
         </div>
     </div>
 
     <div class="selecao">
         <div class="texto">Agora, sua bebida</div>
-    <div class="rolagem">
-        <div class="itens">
+    <div class="rolagem bebida">
+        <div class="itens" onclick="selecionarbebida(this)">
             <img src="Port of Miami.jpg" alt="">
             <h2>Coquinha gelada</h2>
             <p>lata 350ml</p>
             <h4>R$4,90</h4>
         </div>
-        <div class="itens">
+        <div class="itens" onclick="selecionarbebida(this)">
             <img src="Port of Miami.jpg" alt="">
             <h2>Coquinha gelada</h2>
             <p>lata 350ml</p>
             <h4>R$4,90</h4>
         </div>
-        <div class="itens">
+        <div class="itens" onclick="selecionarbebida(this)">
             <img src="Port of Miami.jpg" alt="">
             <h2>Coquinha gelada</h2>
             <p>lata 350ml</p>
             <h4>R$4,90</h4>
         </div>
-        <div class="itens">
+        <div class="itens" onclick="selecionarbebida(this)">
             <img src="Port of Miami.jpg" alt="">
             <h2>Coquinha gelada</h2>
             <p>lata 350ml</p>
@@ -82,30 +82,30 @@
 
 <div class="selecao">
     <div class="texto">Por fim, sua sobremesa</div>
-<div class="rolagem">
-    <div class="itens">
-        <img src="Port of Miami.jpg" alt="">
-        <h2>Pudim</h2>
-        <p>Apenas pudim</p>
-        <h4>R$7,90</h4>
+<div class="rolagem sobremesa">
+    <div class="itens" onclick="selecionarsobremesa(this)">
+        <img src="Titanic2.jpg" alt="">
+        <h2>Titanic</h2>
+        <p>Três bolas de Gelato, farofa de amendoim, chantily e muuuita ganache</p>
+        <h4>R$24,90</h4>
+    </div>    
+    <div class="itens" onclick="selecionarsobremesa(this)">
+        <img src="Brownie com bacon.jpg" alt="">
+        <h2>Brownie com Bacon</h2>
+        <p>Brownie, farofa de bacon, gelato e ganache</p>
+        <h4>R$17,90</h4>
     </div>
-    <div class="itens">
-        <img src="Port of Miami.jpg" alt="">
-        <h2>Pudim</h2>
-        <p>Apenas pudim</p>
-        <h4>R$7,90</h4>
+    <div class="itens" onclick="selecionarsobremesa(this)">
+        <img src="Crepe com doce de leite.jpg" alt="">
+        <h2>Crepe Ports</h2>
+        <p>Crepe, doce de leite argentino, açúcar maçaricado e gelato</p>
+        <h4>R$17,90</h4>
     </div>
-    <div class="itens">
-        <img src="Port of Miami.jpg" alt="">
-        <h2>Pudim</h2>
-        <p>Apenas pudim</p>
-        <h4>R$7,90</h4>
-    </div>
-    <div class="itens">
-        <img src="Port of Miami.jpg" alt="">
-        <h2>Pudim</h2>
-        <p>Apenas pudim</p>
-        <h4>R$7,90</h4>
+    <div class="itens" onclick="selecionarsobremesa(this)">
+        <img src="Taça gelato simples2.jpg" alt="">
+        <h2>Taça Gelato</h2>
+        <p>Gelato, Farofa de amendoim e cauda de morango</p>
+        <h4>R$9,90</h4>
     </div> 
 </div>
 </div>
@@ -113,6 +113,10 @@
     <div>Selecione os 3 itens para fechar o pedido</div>
 </div>
 
+<div class="fechar-pedido-verde">Fechar-Pedido</div>
+
 </div>
+
+<script src="/script.js"></script>
 </body>
 </html>
