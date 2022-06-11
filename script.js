@@ -1,30 +1,59 @@
+let comida;
+let bebida;
+let sobremesa;
+
 function selecionarcomida(elemento) {
-   const botaoClicado = document.querySelector('.borda-verde');
-   if (botaoClicado !== null) {
-      botaoClicado.classList.remove('borda-verde');
+   
+    
+   if (comida) {
+      comida.classList.remove('borda-verde');
+      comida = elemento;
+      comida.classList.add('borda-verde');     
+   } else { comida = elemento;
+      comida.classList.add('borda-verde');
    }
     
-   elemento.classList.add('borda-verde')
+   
+
+   liberaPedido();
+  
 }
 
 
 function selecionarbebida(elemento) {
-   const botaoClicado = document.querySelector('.bebida .borda-verde');
-   if (botaoClicado !== null) {
-      botaoClicado.classList.remove('borda-verde');
+   
+   if (bebida) {
+      bebida.classList.remove('borda-verde');
+      bebida = elemento;
+      bebida.classList.add('borda-verde')
+   } else { bebida = elemento;
+      elemento.classList.add('borda-verde');
    }
     
-   elemento.classList.add('borda-verde')
+   
+   liberaPedido();
 }
 
 function selecionarsobremesa(elemento) {
-   const botaoClicado = document.querySelector('.sobremesa .borda-verde');
-   if (botaoClicado !== null) {
-      botaoClicado.classList.remove('borda-verde');
+
+   if (sobremesa) {
+      sobremesa.classList.remove('borda-verde');
+      sobremesa = elemento;
+      sobremesa.classList.add('borda-verde')
+   } else { sobremesa = elemento;
+      elemento.classList.add('borda-verde');
    }
-    
-   elemento.classList.add('borda-verde')
+   liberaPedido();
 }
 
+
+function liberaPedido() {
+   if(comida && bebida && sobremesa) {
+      const fechar = document.querySelector('.fundo-pedido');
+      fechar.classList.add('escondido');
+      const abrir = document.querySelector('.selecionado');
+      abrir.classList.remove('escondido');
+   }
+}
 
 
