@@ -72,6 +72,5 @@ function liberaPedido() {
    }
 }
 
-console.log(comida)
 
 
