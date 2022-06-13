@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2? family= Righteous & family= Roboto:ital,wght@0,400;0,500;0,700;1,400 & display=swap');
 
 
+a {
+    color: rgb(255, 255, 255);
+    text-decoration-line: none;
+}
+
+ion-icon {
+    color: #32B72F;
+    opacity: 0;
+    height: 20px;
+}
+
+.borda-verde ion-icon {
+    opacity: 100%;
+    padding-left: 110px;
+}
+
 body {
     width: 414px;
     height: 925px;
@@ -80,6 +96,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FFFFFF;
 }
 
 .itens img {
